@@ -22,7 +22,11 @@ Note : Evaluator Section of the code in the notebooks contains some bug and are 
 	Final multimodal notebook consists of model implemented in Xinyu paper, with optimized dataset spilliting and exclusivity in dev,test and train
 2. Multimodal_1.ipynb
 	Multimodal notebook with simple dataset splitting
-	
+
+## sbert
+Contains models and notebooks implemented using sbert library in a bi-encoder way. Losses and accuracy function are inspired from their sbert implementation on quora related pair dataset
+(Check the paths to the dataset before running)
+
 ## Drive
 1. all_data_softmax_3epoch_model
 	contains saved sentence-transformer model (using sbert lib) trained on combining all the datasets available (related only)
@@ -30,4 +34,11 @@ Note : Evaluator Section of the code in the notebooks contains some bug and are 
 	Contains the result of training an cross encoder (sentence transformer) on linked dataset
 3. Linked 
 	Contains all the baseline evaluated on linked dataset seperately
+4. MultiModal
+	Contains the multimodal notebooks, data splits for android and saved models and traces of different experiment
+5. quora_android_2
+	Contains the sbert model based on BERT and distill-bert with different margins, losses and accuracy. 
+6. quora_android(bad_data_splitting)
+	Contains a buggy implementation of data spliiting. May contains some useful functions
+
 	
