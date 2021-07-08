@@ -1,5 +1,6 @@
-# bert-android_stack
-Notebooks, results and dataset on android dataset
+# Related/Linked Question-Question pair - Stackexchange
+Notebooks, results and dataset on android and superuser dataset
+All the results unless explicity mentioned are based on android dataset
 
 ## Baseline
 Contains all the baseline notebook with the saved output trained on android dataset and their traces (Model loss, accuracy on train) (related+linked)
@@ -41,6 +42,10 @@ Contains models and notebooks implemented using sbert library in a bi-encoder wa
 3. sbert_scenario2(incomplete).ipynb: Implemented the scenario 2  of augmented sbert where we score the given dataset using a cross-encoder, here cross encoder was trained on quora dataset provided by sbert. Scores are not good, that's why rejected
 4. sbert_scenario2_official.ipynb: official example of scenario 2 provided by sbert
 5. Test.ipynb: Notebook for detailed testing of model and how it sort of works
+
+## Server-IITI
+1. **Superuser**: ***Contains the latest and last version of bert unimodal and multimodal with freezing different layers of resnet and bert. Also, contains the finalized preprocessing and pair formation script.*** All the results and data path are modified according to the server and are based on superuser. Warning, 'OCR' is not implemented completely. Server also contains the finalized. Note that it will take around 5-6 days for running 10 epochs on the server. **Same folder is present in /home/ckm/visualqatickets/superuser ; with data**. Some data is also present on Sir's PC in 'E:/visualqatickets'
+2. final_model.ipynb: Contains the sbert implementation, taking input of all the pairs of all the stackexchange dataset. 
 
 ## Google-Drive
 1. all_data_softmax_3epoch_model:Contains saved sentence-transformer model (using sbert lib) trained on combining all the datasets available (related only)
